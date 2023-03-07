@@ -26,8 +26,8 @@ function App() {
 
   return (
     <div className="App">
-      <form onSubmit={handleSubmit}>
-
+      <form className='formulario' onSubmit={handleSubmit}>
+        
           <label>
               Nombre:
           </label>
@@ -36,7 +36,9 @@ function App() {
             type="text" 
             onChange={(e)=> setUsuario({...usuario, nombre: e.target.value})} 
           />
-
+        
+          
+        
           <label>
               Apellido:
           </label>
@@ -45,12 +47,13 @@ function App() {
             type="text" 
             onChange={(e)=> setUsuario({...usuario, apellido: e.target.value})} 
           />
+        
 
           <select 
             value={usuario.genero} 
             onChange={(e)=> setUsuario({...usuario, genero: e.target.value})}
           >
-            <option value="ninguno">Seleccionar genero</option>
+            <option value="">Seleccionar</option>
             <option value="rock">Rock</option>
             <option value="electronica">Electronica</option>
             <option value="vallenato">Vallenato</option>

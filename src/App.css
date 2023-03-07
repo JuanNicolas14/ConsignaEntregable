@@ -1,1 +1,38 @@
+.formulario {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 
+    width: 400px;
+    height: 200px;
+}
+
+.formulario input {
+    margin-bottom: 15px;
+    width: 200px;
+}
+
+.formulario button {
+    width: 100px;
+    color: white;
+    background-color: black;
+
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.card {
+    margin: 0 30px;
+    padding: 10px;
+
+    width: 400px;
+    background-color: gray;
+    border-radius: 5px;
+
+}
+
+.card h1 {
+    font-size: 20px;
+}
